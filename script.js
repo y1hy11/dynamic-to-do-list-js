@@ -7,10 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTask = () => {
         const taskText = taskInput.value.trim();
         if (taskText === "") {
-            alert("Enter a task");
+            alert("Enter a task!");
         } else {
             const taskListItem = document.createElement('li');
             taskListItem.textContent = taskText;
+            
+            const removeButton = document.createElement('button');
+            removeButton.textContent = "Remove";
+            removeButton.className = "remove-btn";
         }
     };
 
