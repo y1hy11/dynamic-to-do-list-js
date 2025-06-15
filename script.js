@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
 
     const addTask = () => {
-
+        const taskText = taskInput.ariaValueMax.trim();
+        
     };
 
 });
