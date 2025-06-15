@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
 
     const addTask = () => {
-        const taskText = taskInput.ariaValueMax.trim();
-        
+        const taskText = taskInput.value.trim();
+        if (taskText === "") {
+            alert("Enter a task");
+        } else {
+            const taskListItem = document.createElement('li');
+            taskListItem.textContent = taskText;
+        }
     };
 
 });
