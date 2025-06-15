@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const removeButton = document.createElement('button');
             removeButton.textContent = "Remove";
             removeButton.className = "remove-btn";
+            removeButton.onclick = () => {
+                taskListItem.remove();
+            };
+            taskListItem.appendChild(removeButton);
+            taskList.appendChild(taskListItem);
+            taskInput.value = "";
         }
     };
 
