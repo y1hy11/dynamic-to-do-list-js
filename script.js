@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const taskListItem = document.createElement('li');
+        taskListItem.classList.add('task-item');
         taskListItem.textContent = taskText;
 
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
         removeButton.className = "remove-btn";
+        removeButton.classList.add('delete-button');
         
         removeButton.addEventListener('click', () => {
             taskListItem.remove();
